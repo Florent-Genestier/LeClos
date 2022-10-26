@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+  <section id="presentation">
+    <div id="textIntro">
+      <h2>Un lieu unique au coeur du Livradois</h2>
+      <p>Jean-Pierre et Christiane vous souhaitent la bienvenue à la maison du Clos. Tout est fait pour que votre
+        séjour soit un moment de plaisir partagé.
+        Accueil et savoir-vivre, qualité de vie et activités variées dans un cadre naturel exceptionnel.
+        Ancienne ferme renovée jouxtant une grange appartenant aux propriétaires, ce cadre magnifique, calme,
+        vous permettra de vous détentre en famille ou entres amis.
+        La maison du Clos est un lieu plein de souvenirs ou vous pourrez y construire les votres.
+        Ancienne exploitation agricole, il ne sera pas rare de croiser des animaux lors de vos randonnées.
+      </p>
+    </div>
+  </section>
+
+  <section id="Exposition">
+    <div id="container">
+      <div class="slider">
+      {# the image lives at "public/picture/logo.jpeg" #}
+        <img class="active" src="picture/home.jpeg" alt="img1" />
+        <img class="img__slider" src="{{ asset('picture/room.jpg') }}" alt="img4" />
+        <img class="img__slider" src="{{ asset('picture/kitchen.jpg') }}" alt="img5" />
+        <img class="img__slider" src="{{ asset('picture/vue.jpg') }}" alt="img6" />
+        <img class="img__slider" src="{{ asset('picture/hauteLoire.jpg') }}" alt="img8" />
+        <img class="img__slider" src="{{ asset('picture/sculptureMush.jpg') }}" alt="img9" />
+        <img class="img__slider" src="{{ asset('picture/mushroom.jpg') }}" alt="img10" />
+
+        <div class="next">
+          <div class="btn-navleft">←</div>
+        </div>
+        <div class="previous">
+          <div class="btn-navright">→</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="Tarifs">
+    <h2 class="page__title">Tarifs</h2>
+    <div class="prices__lists">
+
+      <div class="prices__list">
+        <h3 class="prices__list-title">
+          Semaine
+        </h3>
+        <ul>
+          <li class="prices__item">
+            <span class="prices__item-desc">Haute Saison</span> <span class="prices__item-value">560 &euro;</span>
+          </li>
+          <li class="prices__item">
+            <span class="prices__item-desc">Moyenne Saison</span> <span class="prices__item-value">360 &euro;</span>
+          </li>
+          <li class="prices__item">
+            <span class="prices__item-desc">Saison Hiver</span> <span class="prices__item-value">320 &euro;</span>
+          </li>
+          <li class="prices__item">
+            <span class="prices__item-desc">Basse Saison</span> <span class="prices__item-value">320 &euro;</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="prices__list">
+        <h3 class="prices__list-title">
+          Week-End
+        </h3>
+        <ul>
+          <li class="prices__item">
+            <span class="prices__item-desc">Haute Saison</span> <span class="prices__item-value">180 &euro;</span>
+          </li>
+          <li class="prices__item">
+            <span class="prices__item-desc">Moyenne Saison</span> <span class="prices__item-value">140 &euro;</span>
+          </li>
+          <li class="prices__item">
+            <span class="prices__item-desc">Saison Hiver</span> <span class="prices__item-value">130 &euro;</span>
+          </li>
+          <li class="prices__item">
+            <span class="prices__item-desc">Basse Saison</span> <span class="prices__item-value">130 &euro;</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="second__Lign"></div>
+  </section>
+</body>
+{% endblock %}
+

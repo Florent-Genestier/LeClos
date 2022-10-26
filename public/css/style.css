@@ -1,0 +1,340 @@
+/* **************************** STRUCTURE ******************************************* */
+body {
+    font-family: 'Roboto Condensed', Arial, Arial, Helvetica, sans-serif;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    text-shadow:  1px 3px 2px #125733;
+}
+
+h2 {
+    text-align: center;
+    color: #d6c873;
+    font-size: 3em;
+    text-shadow: 1px 3px 2px #125733;
+}
+
+ul {
+margin: 0;
+padding: 0;
+}
+
+li {
+list-style-type: none;
+}
+
+a {
+text-decoration: none;
+color: black
+}
+
+/* ********************************** NAVBAR ******************************************* */
+nav {
+    overflow: hidden;
+    background-color: #4ea6ce;
+    position: fixed;
+    width: 100%;
+    opacity: 0.6;
+}
+
+header li {
+    float: right;
+    font-size: 1.2em;
+}
+
+header li a {
+ text-decoration: none;
+ display: block;
+ padding: 18px 16px;
+
+}
+
+#logo {
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    float: left;
+}
+
+/* ********************************* LEAD PICTURE ******************************************* */
+#leadImage {
+padding-top: 60px;
+background: url(../picture/champs.jpg) no-repeat fixed 60% 80%;
+background-size: cover;
+height: 800px;
+}
+
+h1 {
+color: #d6c873;
+font-size: 8em;
+margin-top: 110px;
+}
+
+#first__lign {
+height: 6px;
+width: 25%;
+margin: -3px auto;
+margin-bottom: 20px;
+background-color: #d6c873;
+box-shadow: 1px 3px 2px #125733;
+}
+
+h3 {
+    text-align: center;
+    color: #d6c873;
+    font-size: 3em;
+    text-shadow: 1px 3px 2px #125733;
+}
+
+/* *********************************** PRESENTATION ******************************************* */
+#presentation {
+    padding: 30px 0px 20px 0px;
+    background-color: #4ea6ce;
+}
+
+p {
+    padding: 10px 10px 20px 10px;
+    color: aliceblue;
+    font-size: x-large;
+}
+
+/* ********************************* SLIDER / EXPOSITION ******************************************* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    height: 80vh;
+    position: relative;
+}
+
+.slider img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .10s;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+.next, .previous {
+    color: whitesmoke;
+    opacity: 0.5;
+    font-size: 6rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.next {
+    right: 1rem;
+}
+
+.previous {
+    left: 1rem;
+}
+
+/* **************************** PRICE ******************************************* */
+#Tarifs {
+  padding: 30px 0px 20px 0px;
+  background-color: #4ea6ce;
+  padding-bottom: 80px;
+}
+
+.page__title {
+margin-bottom: 70px;
+}
+
+.prices__list {
+  margin: 20px, 20px;
+  max-width: 360px;
+}
+
+@media (min-width: 500px) {
+  .prices__lists {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.prices__item {
+  border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+  margin: 5px 20px;
+  padding: 1px 0;
+}
+
+.prices__list-title {
+  font-weight: bold;
+  border-bottom: 1px solid var(--highlight--color);
+  margin-bottom: 20px;
+}
+
+/* pour corriger l'affichage des prix d'abonnements */
+.prices__list-title , .prices__item {
+  display: flex;
+}
+
+.prices__item-desc {
+  display: inline-block;
+  width: 120px;
+}
+
+.prices__item-value {
+  display: inline-block;
+  width: 120px;
+}
+.prices__description-name {
+  font-weight: bold;
+}
+
+.prices__description-line {
+  margin: 5px 0;
+}
+
+/* **************************** GUESTBOOK ******************************************* */
+#image {
+    padding-top: 60px;
+    background: url(../picture/linkedin.jpg) no-repeat fixed 65% 65%;
+    background-size: cover;
+    height: 800px;
+
+}
+
+
+#Commentary {
+    padding: 80px 0 80px 0;
+    color: aliceblue;
+    background-color: #4ea6ce;
+    text-align: center;
+}
+
+#Commentary h2 {
+    padding: 10px 0 20px 0;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+input, textarea, button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: 'Roboto Condensed', Arial, Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    font-size: 1.5em;
+    background-color: #d6c873;
+}
+
+button:hover {
+    background-color: burlywood;
+    color: antiquewhite;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* **************************** ROOM ******************************************* */
+
+.Room p{
+    color: black;
+    background: rgba(rgb 245, 245, 245, 0.1);
+       
+}
+
+#picture {
+    padding-top: 60px;
+    background: url(../picture/room.jpg) no-repeat fixed 80% 80%;
+    background-size: cover;
+    height: 800px;
+}
+#picture-2 {
+    padding-top: 60px;
+    background: url(../picture/room2.jpg) no-repeat fixed 80% 80%;
+    background-size: cover;
+    height: 800px;
+}
+#picture-3 {
+    padding-top: 60px;
+    background: url(../picture/room3.jpg) no-repeat fixed 80% 80%;
+    background-size: cover;
+    height: 800px;
+}
+#picture-4 {
+    padding-top: 60px;
+    background: url(../picture/room4.jpg) no-repeat fixed 80% 80%;
+    background-size: cover;
+    height: 800px;
+}
+#picture-5 {
+    padding-top: 60px;
+    background: url(../picture/room5.jpg) no-repeat fixed 80% 80%;
+    background-size: cover;
+    height: 800px;
+}
+
+  /* **************************** FOOTER ******************************************* */
+#third__lign {
+    height: 1px ;
+    width: 75% ;
+    background-color: burlywood;
+    box-shadow: 1px 3px 2px #4ea6ce;
+    margin: 60px auto
+}
+
+#copyrightAndIcons {
+    display: flex;
+    margin-bottom: 80px;
+    padding: 0 10%;
+}
+
+#copyright {
+    width: 50% ;
+    text-align: right;
+    color: #4ea6ce;
+    margin-left: 80px;
+}
+
+#icons{
+    width: 50%;
+    text-align: right;
+    margin-left: 70px;
+    color: #4ea6ce;
+    padding-bottom: 20px;
+}
+
+#icons a {
+    color: #4ea6ce;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 1.3em;
+}
+
+#icons a:hover{
+   transform: scale(1.5);
+   transition: 0.1s;
+}

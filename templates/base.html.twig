@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% block title %}<title>La maison du Clos</title>{% endblock %}
+
+  {% block stylesheets %}
+  {# the CSS file lives at "public/css/style.css" #}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}" >
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+  {% endblock %}
+</head>
+
+  <body>
+  <!-- footer -->
+    <header>
+    {% include('front/navbar/navbar.html.twig') %}
+      <div id="leadImage">
+        <h1>Le Clos</h1>
+        <div id="first__lign"></div>
+        <h3>Chambres d'hôtes</h3>
+      </div>
+    </header>
+
+      {% block body %}{% endblock %}
+  </body>
+      <!-- footer -->
+      <footer>
+      <div id="third__lign"></div>
+      <div id="copyrightAndIcons">
+        <span id="copyright">
+          <!--Copyright-->&#169
+          <!----> Florent Genestier; {2022}</span>
+      </div>
+      <div id="icons">
+        <a href="http://www.twitter.fr"><i class="fa
+                      fa-twitter"></i></a>
+        <a href="http://www.facebook.fr"><i class="fa
+                      fa-facebook"></i></a>
+        <a href="http://www.instagamm.com"><i class="fa
+                      fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    {% block javascripts %}
+  {# the JS file lives at "scripts/slider.js" #}
+    <script type="text/javascript" src="scripts/sliders.js"></script>
+  {% endblock %}
+  
