@@ -1,6 +1,6 @@
 /* **************************** STRUCTURE ******************************************* */
 body {
-    font-family: 'Roboto Condensed', Arial, Arial, Helvetica, sans-serif;
+    font-family: 'Satisfy', Arial, Arial, Helvetica, sans-serif;
     justify-content: center;
     /* text-align: center; */
 }
@@ -260,10 +260,13 @@ button:hover {
 
 /* **************************** ROOM ******************************************* */
 
-.Room p{
+.Room p {
+    font-family: 'Satisfy', Arial, Helvetica, sans-serif;
     color: black;
-    background: rgba(rgb 245, 245, 245, 0.1);
-       
+    background: white; 
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #picture {
@@ -295,6 +298,37 @@ button:hover {
     background: url(../picture/room5.jpg) no-repeat fixed 80% 80%;
     background-size: cover;
     height: 800px;
+}
+
+.rectangle-one {
+    height: 600px;
+    width: 200px;
+    background-color: white;
+    float: left;
+}
+.rectangle-three {
+    height: 800px;
+    width: 200px;
+    background-color: white;
+    float: left;
+}
+
+.rectangle-two {
+    height: 800px;
+    width: 200px;
+    background-color: white;
+    float: right;
+}
+
+.rectangle {
+    height: 800px;
+    width: 200px;
+    background-color: white;
+    float: right;
+}
+
+.text-presentation {
+    filter: alpha(opacity=10); opacity:0,5;
 }
 
   /* **************************** FOOTER ******************************************* */

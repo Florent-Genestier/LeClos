@@ -43,6 +43,18 @@ class Guestbook
         return $this->id;
     }
 
+    public function getFirstName(): ?string
+    {
+        return $this->firstname;
+    }
+
+    public function setFirstName(?string $firstname): self
+    {
+        $this->firstname = $firstname;
+
+        return $this;
+    }
+    
     public function getName(): ?string
     {
         return $this->name;

@@ -3,16 +3,10 @@
 {# {% block title %}Guestbook{% endblock %} #}
 
 {% block body %}
- <section>
-  <div id="image">
-      <h1 class="title-room">Livre d'Or</h1>
-  </div>
-    </section>
-
   <section id="Commentary">
     <h2>Livre d'Or</h2>
-    <form>
-      <input placeholder="Nom">
+    <form action="" method="post">
+      <input type="text" name="username" placeholder="Nom" class="form-control">
       <textarea placeholder="Votre message ici..."></textarea>
       <button>Votre avis</button>
     </form>
