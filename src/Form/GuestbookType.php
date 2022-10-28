@@ -12,15 +12,13 @@ class GuestbookType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('name', TextType::class, [
-                'label' => 'Nom'
+            ->add('name')
+            ->add('firstname')
+            // ->add('pseudo')
+            ->add('message', null, [
+                'label' => 'Message'
             ])
-            ->add('pseudo')
-            ->add('message', TextareaType::class, [
-                'label' => 'Message',
-                'attr' => ['rows' => '30']
-               ])
-            ->add('date')
+            // ->add('date')
         ;
     }
 

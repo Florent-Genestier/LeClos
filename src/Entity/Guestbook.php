@@ -2,7 +2,6 @@
 
 namespace App\Entity;
 
-use App\Entity\Depot;
 use App\Repository\GuestbookRepository;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -24,19 +23,24 @@ class Guestbook
     private $name;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $pseudo;
+    private $firstname;
+
+    // /**
+    //  * @ORM\Column(type="string", length=255)
+    //  */
+    // private $pseudo;
 
     /**
      * @ORM\Column(type="text")
      */
     private $message;
 
-    /**
-     * @ORM\Column(type="date")
-     */
-    private $date;
+    // /**
+    //  * @ORM\Column(type="date")
+    //  */
+    // private $date;
 
     public function getId(): ?int
     {
@@ -67,17 +71,17 @@ class Guestbook
         return $this;
     }
 
-    public function getPseudo(): ?string
-    {
-        return $this->pseudo;
-    }
+    // public function getPseudo(): ?string
+    // {
+    //     return $this->pseudo;
+    // }
 
-    public function setPseudo(string $pseudo): self
-    {
-        $this->pseudo = $pseudo;
+    // public function setPseudo(string $pseudo): self
+    // {
+    //     $this->pseudo = $pseudo;
 
-        return $this;
-    }
+    //     return $this;
+    // }
 
     public function getMessage(): ?string
     {
@@ -91,15 +95,15 @@ class Guestbook
         return $this;
     }
 
-    public function getDate(): ?\DateTimeInterface
-    {
-        return $this->date;
-    }
+    // public function getDate(): ?\DateTimeInterface
+    // {
+    //     return $this->date;
+    // }
 
-    public function setDate(\DateTimeInterface $date): self
-    {
-        $this->date = $date;
+    // public function setDate(\DateTimeInterface $date): self
+    // {
+    //     $this->date = $date;
 
-        return $this;
-    }
+    //     return $this;
+    // }
 }
