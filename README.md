@@ -1,4 +1,4 @@
-# Projet _"La maison du Clos"_
+# Projet _"La maison du Clos"_ (toujours en cours 04/11/22)
 
 ## Description du projet
 
