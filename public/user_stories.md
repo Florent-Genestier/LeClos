@@ -15,5 +15,12 @@
 | En tant que | Je veux | Afin de (si besoin/nécessaire) |
 |--|--|--|
 | visiteur | pouvoir visualiser dès la première page le sujet du site  | - |
-| visiteur | pouvoir visualiser les tarifs | - |
+| visiteur | pouvoir visualiser les descriptions | - |
 | visiteur | pouvoir visualiser les photos  | - |
+
+## Portfolio
+
+| En tant que | Je veux | Afin de (si besoin/nécessaire) |
+|--|--|--|
+| visiteur | pouvoir visualiser laisser un commentaire | - |
+| visiteur | pouvoir visualiser les autres commentaires | - |
